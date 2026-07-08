@@ -194,4 +194,59 @@ GET /notes?search=fastapi
 
 GET /notes?sort=title
 
-GET /notes?sort=created_at
+GET /notes?sort=created_at&descending=true
+
+GET /notes?sort=created_at&descending=false
+
+
+---
+
+## API Documentation
+
+Once the server is running:
+
+text
+http://127.0.0.1:8000/docs
+
+
+---
+
+## Preview
+
+![Swagger UI](assets/swagger.png)
+
+---
+
+## API Capabilities
+
+- JWT Authentication
+- User Authorization
+- CRUD Operations
+- Soft Delete
+- Restore Notes
+- Archive Notes
+- Pin Notes
+- Search
+- Dynamic Sorting
+- SQLAlchemy 2.0 ORM
+- SQLite Integration
+- Pydantic Validation
+- Response Validation
+- RESTful API Design
+
+---
+
+## Future Improvements
+
+- Automatic trash cleanup after 30 days
+- Pagination
+- Tags & Labels
+- Note colors
+- Rich text support
+- PostgreSQL
+- Alembic migrations
+- Docker support
+- Automated testing
+- CI/CD
+
+---
