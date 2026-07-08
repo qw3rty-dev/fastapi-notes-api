@@ -179,6 +179,7 @@ Swagger automatically includes the JWT in protected requests.
 | GET | /notes | Retrieve active notes |
 | GET | /notes/{note_id} | Retrieve note by ID |
 | PATCH | /notes/{note_id} | Update note |
+| PATCH | /notes/{note_id}/metadata | Pin, archive or soft delete |
 | GET | /notes/archived | Retrieve archived notes |
 | GET | /notes/trash | Retrieve deleted notes |
 | DELETE | /notes/{note_id} | Permanently delete note |
@@ -197,7 +198,7 @@ GET /notes?sort=title
 GET /notes?sort=created_at&descending=true
 
 GET /notes?sort=created_at&descending=false
-
+```
 
 ---
 
@@ -205,9 +206,9 @@ GET /notes?sort=created_at&descending=false
 
 Once the server is running:
 
-text
+```text
 http://127.0.0.1:8000/docs
-
+```
 
 ---
 
